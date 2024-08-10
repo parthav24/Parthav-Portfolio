@@ -20,6 +20,10 @@ import sql from "../assets/sql.png";
 import firebase from "../assets/firebase.png";
 import dsa from "../assets/dsa.png";
 import dbms from "../assets/dbms.png";
+import numpy from "../assets/numpy.png";
+import pandas from "../assets/pandas.png";
+import matplotlib from "../assets/matplotlib.png";
+import scikit from "../assets/scikit.png";
 const Experience = () => {
   const techs = [
     {
@@ -143,6 +147,30 @@ const Experience = () => {
       title: "DBMS",
       style: "shadow-sky-400",
     },
+    {
+      id: 21,
+      src: numpy,
+      title: "Numpy",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 22,
+      src: pandas,
+      title: "Pandas",
+      style: "shadow-yellow-400",
+    },
+    {
+      id: 23,
+      src: matplotlib,
+      title: "Matplotlib",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 24,
+      src: scikit,
+      title: "Scikit-Learn",
+      style: "shadow-orange-400",
+    },
   ];
 
   return (
@@ -156,12 +184,12 @@ const Experience = () => {
             Experience
           </p>
           <p className="py-6">
-            These are the Technologies / Languages I've worked with and used them in my
-            projects.
+            These are the Technologies / Languages I've worked with and used
+            them in my projects.
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 md:grid-cols-8 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}

@@ -2,7 +2,7 @@ import React from "react";
 import HeroImage from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import resume from "../assets/Parthav_Chodvadiya.pdf";
+import resume from "../assets/Parthav_Chodvadiya_ResumePDF.pdf";
 
 const Home = () => {
   return (
