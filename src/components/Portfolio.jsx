@@ -1,6 +1,7 @@
 import React from "react";
 import todosync from "../assets/todosync.jpg";
 import mealmission from "../assets/mealmission.jpg";
+import expensetracker from "../assets/expensetracker.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -9,7 +10,7 @@ const Portfolio = () => {
       src: todosync,
       link: "https://todoosync.netlify.app/",
       repo: "https://github.com/parthav24/TodoSync",
-      video: "https://www.youtube.com/watch?v=SdEomxfndoI",
+      video: "https://www.youtube.com/watch?v=SdEomxfndoI&feature=youtu.be",
     },
     {
       id: 2,
@@ -17,6 +18,13 @@ const Portfolio = () => {
       link: "https://missionmeal.netlify.app/",
       repo: "https://github.com/parthav24/HackSwift",
       video: "https://www.youtube.com/watch?v=qANwOgijGBs&feature=youtu.be",
+    },
+    {
+      id: 3,
+      src: expensetracker,
+      link: "https://github.com/parthav24/Expense-Tracker/",
+      repo: "https://github.com/parthav24/Expense-Tracker",
+      video: "https://www.youtube.com/watch?v=Z3iEKrcsQW4&feature=youtu.be",
     },
   ];
 
@@ -33,7 +41,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, link, repo, video }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <a href={video}>
